@@ -1,0 +1,37 @@
+//щарка позиционируется фикс потому что есть сайдбар
+
+.header{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 300px);  //для того, чтобы header был рядос с сб
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1111;
+
+    background-color: $black;
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+
+    @include breakpoint($tablet-bp){
+        width: 100%;
+    }
+}
+
+.header__left{
+    width: 60%;
+
+    @include breakpoint($mobile-bp){
+        width: 40%;
+    }
+}
+
+.header__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+
+    @include breakpoint($mobile-bp){
+        width: 60%;
+    }
+}

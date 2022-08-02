@@ -1,0 +1,24 @@
+.social {
+   display: flex;
+   justify-content: center;
+
+&--sidebar{
+
+      @include breakpoint($tablet-bp){
+        display: none;
+
+      }
+}
+
+}
+
+.social__svg {
+    margin-top: 17px;
+    padding-right: 15px;
+    transition: all .5s;
+
+    &:hover{
+        transform: scale(1.3);
+    }
+
+}

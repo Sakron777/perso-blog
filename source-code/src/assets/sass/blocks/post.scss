@@ -1,0 +1,74 @@
+.post {
+    padding: 15px 20px;
+    margin: 30px 0;
+    box-shadow: $shadow;
+    border-radius: $r5px;
+    background-color: $blacks;
+
+    @include breakpoint($mobile-32){
+
+        display: none;
+     }
+
+}
+
+.post__form {
+    display: flex;
+    align-items: flex-end; //спуск блоков вниз
+
+
+}
+
+.post__textarea {
+   flex-grow: 1;
+   height: 24px;
+   font-family: inherit;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 18px;
+   resize: none;
+   outline: 0;
+   overflow: hidden;
+
+   background-color: $blacks;
+
+   color: $greyl;
+
+   border: none;
+
+   &::placeholder{
+       color: $greyl;
+   }
+}
+
+//кнопка для инпута для фото
+.post__file{
+    display: block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    margin-right: 15px;
+
+    border-radius: 50%;
+    background: $blacks url("../img/post/1.svg") center no-repeat;
+
+
+    input{
+        display: none;
+    }
+}
+
+.post__btn{
+    display: block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    margin: 0;
+
+    background: none;
+    border-radius: 50%;
+    border: 0;
+    background: $blacks url("../img/post/2.svg") center no-repeat;
+
+}

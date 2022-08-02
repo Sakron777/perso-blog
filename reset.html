@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/img/modal/4.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@700&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:wght@400;700&family=Poiret+One&family=Raleway:wght@300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>reset</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="">
+
+    
+    <svg style="display: none;">
+        <symbol id="1" viewBox="0 0 68 75">
+    <g>
+        <path d="M12.2436 1.65369C5.48193 -2.2249 0 0.952489 0 8.74492V66.2496C0 74.0498 5.48193 77.2231 12.2436 73.3482L62.5056 44.5233C69.2695 40.6433 69.2695 34.3572 62.5056 30.4781L12.2436 1.65369Z"/>
+    </g>
+        </symbol>
+        </svg>
+
+
+<div class="page" id="page">
+
+   <!--header-->
+   <header class="header">
+       <div class="header__left">
+   
+           <nav class="nav" id="nav">
+               <ul class="nav__list">
+                   <li class="nav__item">
+                       <a class="nav__link " href="index.html" target="_blank" data-scroll="#WORK">Главная</a>
+                   </li>
+      <!--создание окна под статьи-->
+                   <li class="nav__item">
+                       <p class="nav__link has-subnav " href="index.html" data-scroll="#WORK">Статьи</p>
+   
+                       <ul class="nav__subnav">
+                           <li class="nav__item">
+                               <a class="nav__subnav-link" href="index.html" target="_blank" data-scroll="#WORK">Создание сайтов</a>
+                           </li>
+   
+                           <li class="nav__item ">
+                               <a class="nav__subnav-link" href="index.html" target="_blank" data-scroll="#WORK">Интернет-маркетинг</a>
+                           </li>
+   
+                           <li class="nav__item ">
+                               <a class="nav__subnav-link" href="index.html" target="_blank" data-scroll="#WORK">Продвижение видео</a>
+                           </li>
+   
+                       </ul>
+                   </li>
+   
+                   <li class="nav__item">
+                       <a class="nav__link " href="index.html" target="_blank" data-scroll="#WORK">Обо мне</a>
+                   </li>
+   
+                   <li class="nav__item">
+                       <a class="nav__link " href="index.html" target="_blank" data-scroll="#WORK">Реклама</a>
+                   </li>
+   
+               </ul>
+           </nav>
+   
+              <!--бургер-->
+              <button class="burger active" type="button" id="sidebarToggle">
+                  <span>Открыть навигацию</span>
+   
+              </button>
+   
+       </div>
+   
+       <div class="header__right">
+   
+       <nav class="nav" id="nav">
+           <ul class="nav__list">
+               <li>
+                   <a class="nav__link active" href="profile.html" target="_blank" data-scroll="#WORK">Профиль</a>
+               </li>
+               <li>
+                   <a class="nav__link active" href="signin.html" target="_blank" data-scroll="#WORK">Выйти</a>
+               </li>
+           </ul>
+       </nav>
+   
+           <form class="search" action="search.html" method="get">
+               <input class="search__input" type="text" name="name" placeholder= "Поиск по блогу">
+           </form>
+   
+       </div>
+   </header>   <!--content-->
+
+
+    <aside class="sidebar" id="sidebar">
+        <img class="sidebar__header" src="assets/img/profile/2.jpg" alt="" >
+    
+        <div class="sidebar__prof">
+    
+                  <img class="sidebar__author" src="assets/img/profile/3.jpg" alt="">
+    
+                <div class="sidebar__flex">
+                    <div class="sidebar__title">Александр Астафуров</div>
+                    <div class="sidebar__subtitle">блог front-end разработчика</div>
+                </div>
+    
+    
+                <nav class="nav nav--mobile" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link " href="index.html" target="_blank" data-scroll="#WORK">Главная</a>
+                        </li>
+           <!--создание окна под статьи-->
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav nav__sidebar" href="#" >Статьи</a>
+    
+                            <ul class="nav__subnav nav__status" style="display: none;">
+                                <li class="nav__item">
+                                    <a class="nav__subnav-link" href="index.html" target="_blank" data-scroll="#WORK">Создание сайтов</a>
+                                </li>
+    
+                                <li class="nav__item ">
+                                    <a class="nav__subnav-link" href="index.html" target="_blank" data-scroll="#WORK">Интернет-маркетинг</a>
+                                </li>
+    
+                                <li class="nav__item ">
+                                    <a class="nav__subnav-link" href="index.html" target="_blank" data-scroll="#WORK">Продвижение видео</a>
+                                </li>
+    
+                            </ul>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a class="nav__link " href="index.html" target="_blank" data-scroll="#WORK">Обо мне</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a class="nav__link " href="index.html" target="_blank" data-scroll="#WORK">Реклама</a>
+                        </li>
+    
+                        <li>
+                            <a class="nav__link active" href="profile.html" target="_blank" data-scroll="#WORK">Профиль</a>
+                        </li>
+    
+                        <li>
+                            <a class="nav__link active" href="signin.html" target="_blank" data-scroll="#WORK">Выйти</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+            <div class="social social--sidebar">
+                <a class="social__svg" href="" target="_blank">
+                    <img class="social__icon" src="assets/img/social/1.svg" alt="1" >
+                </a>
+                <a class="social__svg" href="https://vk.com/fanfan1994" target="_blank">
+                    <img class="social__icon" src="assets/img/social/2.svg" alt="2" >
+                </a>
+                <a class="social__svg" href="" target="_blank">
+                    <img class="social__icon" src="assets/img/social/3.svg" alt="3" >
+                </a>
+            </div>
+    
+            <div class="sidebar__text">
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, voluptates a necessitatibus debitis tempora quam sequi laboriosam laudantium, tenetur earum, voluptatem aliquam minus nobis! Ut magni saepe odit sunt porro.</p>
+            </div>
+        </div>
+        <div class="sidebar__footer">
+            <a class="btn btn--red btn--320" href="works.html">Мои работы</a>
+            <button class="btn btn--blue btn--320" href="" data-bs-toggle="modal" data-bs-target="#hereme">Написать мне</button>
+        </div>
+    </aside>
+   <main class="main">
+       <div class="container">
+    
+    
+    
+    <div class="profile  profile--center">
+        <form class="profile__form profile__form--mr0" action="/" method="post">
+    
+            <h1 class="page__title page__title--center">Сброс пароля</h1>
+    
+            <div class="profile__form-group">
+                <input class="profile__input" type="email" name="email" placeholder="Ваш e-mail" >
+                <span class="profile__form-line"></span>
+            </div>
+    
+    
+            <div class="profile__btn">
+                <button class="btn btn--blue btn--bluee btn--blureset" type="submit">Восстановить</button>
+            </div>
+    
+                <ul class="profile__registr">
+                    <li class="profile__registr-list">
+                        <a href="signin.html">Вход</a>
+    
+                    </li>
+    
+                    <li>
+                        <a href="signup.html">Регистрация</a>
+    
+                    </li>
+                </ul>
+        </form>
+    
+        </div>
+     </div>
+  </main>
+   <!--footer-->
+    <footer class="footer">
+    
+    </footer></div>
+
+<div class="modal fade" id="hereme" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <button class="modal__close" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="assets/img/modal/1.svg" alt="">
+        </button>
+
+        <div class="profile profile--center">
+            <form class="profile__form profile__form--center" action="/" method="post">
+
+                <div class="profile__form-group ">
+                    <input class="profile__input profile__input--fon" type="text" name="name" placeholder="Имя" >
+                    <span class="profile__form-line"></span>
+                </div>
+
+                <div class="profile__form-group ">
+                    <input class="profile__input profile__input--fon " type="email" name="email" placeholder="Ваш e-mail">
+                    <span class="profile__form-line"></span>
+                </div>
+
+                <div class="comments__form-group comments__form-group--textareas ">
+                    <textarea class="comments__textarea comments__textarea--leftarea" name="comment-text" placeholder="Текст комментария"></textarea>
+                    <span class="comments__form-line"></span>
+                   </div>
+
+                <div class="profile__btn">
+                    <button class="btn btn--blue btn--bluee" type="submit">Отправить</button>
+                </div>
+                <ul class="modal__footer">
+                    <li > e-mail: <a href="mailto:info@mywebsite.ru">info@mywebsite.ru </a></li>
+                   <li> тел: <a href="tel:89227346188">89227346188</a></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+</div><div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-content--share">
+        <button class="modal__close" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="assets/img/modal/1.svg" alt="">
+        </button>
+
+        <div class="social social--smodal">
+            <a class="social__svg" href="" target="_blank">
+                <img class="social__icon" src="assets/img/social/5.svg" alt="5" >
+            </a>
+            <a class="social__svg" href="" target="_blank">
+                <img class="social__icon" src="assets/img/social/6.svg" alt="6" >
+            </a>
+            <a class="social__svg" href="https://vk.com/share.php?url=http://blogers.alexaporfoliorezume.ru/" target="_blank">
+                <img class="social__icon" src="assets/img/social/8.svg" alt="8" >
+            </a>
+            <a class="social__svg" href="" target="_blank">
+                <img class="social__icon" src="assets/img/social/4.svg" alt="4" >
+            </a>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<div class="modal fade" id="video1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-content--story" id="close_vid">
+
+        <button class="modal__close modal__close--videos" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <img class="modal__svg" src="assets/img/modal/6.svg" alt="">
+        </button>
+
+        <video class="modal__video" width="427" height="588" controls muted poster="assets/img/prot/1.jpg">
+            <source src="assets/img/prot/11.mp4" type="video/mp4">
+            <p>Ваш браузер не поддерживает HTML5 video</p>
+        </video>
+
+    </div>
+</div>
+</div>
+<div class="modal fade" id="video2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-content--story" id="close_vid">
+
+        <button class="modal__close modal__close--videos" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <img class="modal__svg" src="assets/img/modal/6.svg" alt="">
+        </button>
+
+        <video class="modal__video" width="427" height="588" controls muted poster="assets/img/prot/1.jpg" id="video2">
+            <source src="https://htmlbase.ru/storage/app/media/demo.mp4" type="video/mp4">
+            <p>Ваш браузер не поддерживает HTML5 video</p>
+        </video>
+
+
+
+    </div>
+</div>
+</div>
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>

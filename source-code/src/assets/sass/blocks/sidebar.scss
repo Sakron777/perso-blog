@@ -1,0 +1,147 @@
+.sidebar{
+    width: 300px;
+    height: 100vh;
+
+    background-color: $blgr;
+    box-shadow: $shadows;
+
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+    //плавное появление сайтбара
+    @include breakpoint($tablet-bp){
+        display: flex;
+        flex-direction: column;
+        overflow: auto;  //чтобы был скролл у сайтбара
+
+        transform: translateX(-100%);
+        transition: all .3s;
+//бургер
+        .show-sidebar & {
+            transform: translateX(0);
+        }
+    }
+}
+
+
+
+.sidebar__header {
+    display: block;
+    width: 100%;
+    object-fit: cover; //чтобы фотка растянулась красиво
+
+    position: relative;
+    margin-bottom: 70px;
+
+    @include breakpoint($tablet-bp){
+        height: 140px;
+        margin-bottom: 0px;
+
+    }
+
+}
+
+.sidebar__prof{
+    @include breakpoint($tablet-bp){
+        flex-grow: 1;
+
+    }
+
+}
+
+
+
+.sidebar__author {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+    border: 2px solid white;
+
+    position: absolute;
+    top: 122px;
+    left: 95px;
+    z-index: 1;
+
+    @include breakpoint($tablet-bp){
+        width: 65px;
+        height: 65px;
+
+        top: 120px;
+        left: 15px;
+
+    }
+}
+
+.sidebar__flex{
+    @include breakpoint($tablet-bp){
+        margin-top: 10px;
+        margin-left: 87px;
+    }
+}
+
+.sidebar__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-bottom: 3px;
+
+    @include breakpoint($tablet-bp){
+        text-align: left;
+        font-size: 15px;
+        line-height: 18px;
+
+    }
+}
+
+.sidebar__subtitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #DEDEDE;
+
+    @include breakpoint($tablet-bp){
+       text-align: left;
+
+       font-size: 12px;
+       line-height: 14px;
+    }
+}
+
+.sidebar__text {
+    padding: 1px 20px;
+    margin: 60px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    text-align: center;
+    color: #FFFFFF;
+
+    border-top: 1px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+
+    }
+}
+
+
+.sidebar__footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}

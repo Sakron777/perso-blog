@@ -1,0 +1,167 @@
+.profile{
+    display: flex;
+    align-items: center;
+
+    &--center{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    @include breakpoint($mobile-63){
+        flex-direction: column;
+
+
+
+     }
+}
+
+.profile__form {
+
+    margin-right: 111px;
+//по центру модал
+    &--center{
+        margin-right: 0px;
+    }
+
+    &--mr0{
+        margin-right: 0px;
+    }
+
+    &--sigin{
+        margin-right: 0px;
+    }
+
+    &--sigup{
+        margin-right: 0px;
+    }
+
+    @include breakpoint($mobile-63){
+        margin-right: 0px;
+        order: 2;
+
+     }
+}
+
+.profile__form-group {
+    position: relative;
+    border-bottom: 1px solid #3F3F3F;
+    width: 340px;
+
+    @include breakpoint($mobile-63){
+        width: 220px;
+
+     }
+}
+
+.profile__input {
+    display: block;
+    width: 100%;
+    background-color: $fon;
+    border: 0;
+    outline: 0;
+    resize: 0;
+    padding: 30px 0 10px 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: white;
+
+        //делаем цветную линию
+        &:focus + .profile__form-line{
+            width: 100%;
+        }
+
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        //для modal окна
+        &--fon{
+            background-color: $blgr;
+        }
+
+        @include breakpoint($mobile-63){
+            text-align: center;
+
+
+         }
+}
+
+.profile__btn{
+    margin-top: 25px;
+}
+
+.profile__form-line{
+    width: 0;
+    height: 1px;
+
+    background-color: $blue;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    transition: all .4s;
+}
+
+.profile__avatar {
+    @include breakpoint($mobile-63){
+        order: 1;
+
+     }
+
+}
+
+.profile__img {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+.prodile__file{
+    display: block;
+    margin-top: 15px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: $blul;
+
+    &:hover{
+        text-decoration: underline;
+    }
+
+    input{
+        display: none;
+    }
+    @include breakpoint($mobile-63){
+        text-align: center;
+
+     }
+
+}
+
+.profile__registr{
+    display: flex;
+    padding-right: 5px;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.profile__registr-list{
+    padding-right: 8px;
+}
+
+

@@ -1,0 +1,156 @@
+.comments {
+    margin-top: 30px;
+}
+
+.comments__title {
+    margin: 0px 0 1px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+
+
+.comments__form-group{
+    position: relative;
+    border-bottom: 1px solid #3F3F3F;
+    margin-bottom: 12px;
+
+    &--textareas{
+        @include breakpoint($mobile-63){
+            width: 220px;
+         }
+
+    }
+}
+
+.comments__textarea {
+    display: block;
+    width: 100%;
+    height: 16px;
+
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 22px 0 10px 0;
+
+    color: white;
+
+    background-color: $blgr;
+    border: 0;
+    resize: none;
+    outline: 0;
+
+    //делаем цветную линию
+    &:focus + .comments__form-line{
+        width: 100%;
+    }
+
+
+
+    &::placeholder{
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    &--leftarea{
+        @include breakpoint($mobile-63){
+            text-align: center;
+         }
+
+    }
+}
+
+.comments__form-line {
+    width: 0;
+    height: 1px;
+
+    background-color: $blue;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    transition: all .4s;
+}
+
+
+.comments__blog {
+    margin-top: 50px;
+    list-style: none;
+}
+
+.comments__item {
+    margin: 30px 0;
+
+    //делает отступ от основного коммента
+    > .comments__blog{
+        padding-left: 30px;
+        margin-top: 0;
+    }
+}
+
+.comments__header{
+    display: flex;
+    align-items: center;
+
+}
+
+.comments__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.comments__name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.comments__date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #757575;
+
+}
+
+.comments__text{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+}
+
+.comments__read{
+    font-family: 'Roboto', 'Lato', sans-serif;
+    margin-top: 10px;
+    color: $blul;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    background: 0;
+    border: 0;
+    padding: 0;
+}

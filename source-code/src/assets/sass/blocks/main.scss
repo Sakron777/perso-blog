@@ -1,0 +1,13 @@
+//для того, чтобы был виден контент за сайтбаром
+.main{
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-bottom: 80px;
+
+    @include breakpoint($tablet-bp){
+        padding: 70px 0 50px;
+    }
+}
+
+
+

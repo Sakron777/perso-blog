@@ -1,0 +1,64 @@
+.related {
+    border-bottom: 1px solid #1c1c1c;
+    padding-top: 30px;
+}
+
+.related__title{
+    margin-bottom: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.related__list {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+
+   @include breakpoint($mobile-56){
+    display: block;
+
+}
+}
+
+.related__list-item {
+    width: 50%;
+    margin-bottom: 24px;
+
+    @include breakpoint($mobile-56){
+        width: 100%;
+
+    }
+}
+
+.related__list-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #F3EBA2;
+
+    //чтобы можно было скрывать текст, когда его больше
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @include breakpoint($mobile-56){
+        overflow: auto;
+        white-space: normal;
+    }
+}
+
+.related__list-date{
+    font-family: 'Lato' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #828282;
+}

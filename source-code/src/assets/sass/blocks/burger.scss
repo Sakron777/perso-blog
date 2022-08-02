@@ -1,0 +1,82 @@
+.burger {
+    display: none;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+
+    background: 0;
+    border: 0;
+
+   position: absolute;
+   top: 50%;
+   left: 15px;
+   z-index: 1;
+
+   transform: translateY(-50%);
+
+   &:before,
+   &:after,
+   span{
+       display: block;
+       width: 100%;
+       height: 2px;
+
+       background-color: white;
+
+       position: absolute;
+       left: 0;
+
+   }
+
+   &:before,
+   &:after{
+       transition: all .4s;
+   }
+
+   &:before{
+    content: '';
+    top: 0;
+}
+
+&:after{
+    content: '';
+    bottom: 0;
+}
+
+span{
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .4s;
+
+}
+
+.show-sidebar & {
+    span{
+        opacity: 0;
+    }
+
+    &:before,
+    &:after{
+        top: 50%;
+    }
+
+    &:before{
+        transform: rotate(45deg);
+
+    }
+
+    &:after{
+        transform: rotate(-45deg);
+
+    }
+
+}
+
+@include breakpoint($tablet-bp){
+    display: block;
+
+ }
+
+}
